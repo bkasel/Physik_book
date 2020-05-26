@@ -19,3 +19,27 @@ knitr::kable(
 ```
 
 You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+
+```{r nice-image, echo=FALSE}
+knitr::include_graphics("images/Test_svg.svg", auto_pdf = TRUE)
+```
+
+## Testing htmlwidgets
+
+```{r echo=FALSE}
+library(ggplot2)
+library(plotly)
+p <- ggplot(data = diamonds, aes(x = cut, fill = clarity)) +
+            geom_bar(position = "dodge")
+ggplotly(p)
+```
+
+
+```{r echo=FALSE, screenshot.alt="images/ytscreen.png", fig.cap="this is a great link to a [youtube video](https://www.youtube.com/xkLAhU74f3s)"}
+knitr::include_url("https://www.youtube.com/embed/xkLAhU74f3s")
+```
+
+
+::: {.theoreme}
+La première loi de Newton dit que dans un référentiel galiléen, un systèe isolé suit un MRU
+:::

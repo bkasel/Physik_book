@@ -12,3 +12,11 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+
+div .theoreme {
+  border-radius: 25px;
+  background: #428fc6;
+  padding: 20px;
+  font-family: Impact, Charcoal, sans-serif;
+}
