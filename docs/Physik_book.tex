@@ -108,12 +108,18 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
 \usepackage{booktabs}
+\usepackage{tcolorbox}
+\newenvironment{plotly}{}{}
+
+\definecolor{theoremblue}{HTML}{19a6e4}
+
+\newenvironment{theoreme}{\begin{tcolorbox}[width=\textwidth,colback={theoremblue}]}{\end{tcolorbox}}
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
 \title{Physik 4GIG}
 \author{Ben Kasel}
-\date{2020-05-26}
+\date{2020-06-12}
 
 \begin{document}
 \maketitle
@@ -248,7 +254,11 @@ You can write citations, too. For example, we are using the \textbf{bookdown} pa
 \caption{\label{fig:unnamed-chunk-4}this is a great link to a \href{https://www.youtube.com/xkLAhU74f3s}{youtube video}}
 \end{figure}
 
+\begin{theoreme}
+
 La première loi de Newton dit que dans un référentiel galiléen, un systèe isolé suit un MRU
+
+\end{theoreme}
 
 \hypertarget{literature}{%
 \chapter{Literature}\label{literature}}
