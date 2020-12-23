@@ -13,7 +13,7 @@ description: "Physikkurs für die Klassenstufe 4GIG."
 
 # Einleitung
 
-Dieses Buch enthällt
+Dieses Buch enthält einen Kurs der Klasse 4GIG.
 
 The **bookdown** package can be installed from CRAN or Github:
 
